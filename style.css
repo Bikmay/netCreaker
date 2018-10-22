@@ -1,4 +1,7 @@
-.inputs{
+
+
+
+  .inputs{
     background-color: white;
     border: none;
     border-bottom:1px solid #d5d5d5;
@@ -33,28 +36,21 @@
 
 
 }
+.my-table th{
+    width: 181px;
 
-.cell{
-    padding: 6px 12px;
-    display: table-cell;
-    @media screen and (max-width: 580px)
-        padding: 2px 16
-        display: block
+    height: 25px;
+}
+
+.my-table {
+    background-color: #f9f9f9;
+
+    font-family: "Roboto script=all rev=2", "Adobe Blank", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 
 }
 
-.table{
-    margin: 0 0 40px 0;
-    width: 100%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    display: table;
-    @media screen and (max-width: 580px)
-        display: block;
+#header{
+    background-color: #85c3f8;
 }
-
-
-.row{
-    display: table-row;
-    background: #f6f6f6;
-}
-
