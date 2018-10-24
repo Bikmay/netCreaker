@@ -1,4 +1,7 @@
 
+body{
+
+}
 
 
   .inputs{
@@ -13,7 +16,6 @@
     margin-left: 246px;
 
 }
-
 .searches button{
     width: 280px;
     margin-left: 33px;
@@ -43,12 +45,16 @@
 }
 
 .my-table {
-    background-color: #f9f9f9;
+    background-color: #e4e4e4;
 
     font-family: "Roboto script=all rev=2", "Adobe Blank", sans-serif;
     font-weight: 300;
+
     font-style: normal;
 
+    margin-top: 50px;
+
+    margin-left: 22px;
 }
 
 #header{
