@@ -6,20 +6,29 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:200" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 </head>
-<body>
+<body onload="script()">
 
 <script src="script.js"></script>
+<script src="modal.js"></script>
+
 
 <div  style="background-color: white;">
     <div class="searches">
-        <input id="search1" onblur="preText()" class="inputs">
-        <button>Ввод номера сотрудника</button></div>
+        <input id="search1" onclick="clear_input()" onblur="preText()" class="inputs">
+        <button onclick="checkInput()"  id="numberButton">Ввод номера сотрудника</button></div>
     <div class="searches">
 
-        <input class="inputs">
+        <input id="search2" onclick="clear_input1()" onblur="preText1()" class="inputs">
         <button>Ввод имени сотрудника</button>
     </div>
+</div>
+
+<div class="buttons">
+    <button>Вывести всех сотрудников</button>
+    <button style="margin-left: 10px;">Создать записи от сотрудника</button>
 </div>
 
 
@@ -43,6 +52,20 @@
 
 </table>
 
+<div id="he2" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable">
+    <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+        <span id="ui-dialog-title-dialog" class="ui-dialog-title">Заголовок</span>
+        <a class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a>
+    </div>
+    <div style="height: 200px; min-height: 109px; width: auto;" class="ui-dialog-content ui-widget-content" id="dialog">
+        <p>Содержимое диалогового окна.</p>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
 
 </body>

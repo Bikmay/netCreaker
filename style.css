@@ -60,3 +60,52 @@ body{
 #header{
     background-color: #85c3f8;
 }
+
+.buttons button{
+    background-color: #009ac9;
+
+    width: 244px;
+
+    height: 30px;
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-radius: 6px;
+
+    display: inline;
+    margin-left: 247px;
+}
+
+.buttons{
+    height: 60px;
+    width: 100%;
+
+    margin-top: 15px;
+}
+
+.modal-header h2 {
+    color: #555;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+/* кнопка закрытия окна */
+.modal .btn-close {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.modal .btn-close:hover {
+    color: red;
+}
+/* слой затемнения */
+.modal-wrap:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;}
